@@ -9,7 +9,7 @@ import (
 // HTTP GET requst to a url
 
 func contentType(url string) (string, error) {
-	resp, err := http.Get("url")
+	resp, err := http.Get(url)
 
 	if err != nil {
 		return "", err
